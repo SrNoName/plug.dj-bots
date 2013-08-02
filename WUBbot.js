@@ -1622,7 +1622,7 @@
     return data.currentcurates = obj.curates;
   };
 
-  handleNewSong = function(obj) {
+  handleNewSong = function(obj) { //No momento o comando não esta funcionando.
     var songId;
     data.intervalMessages();
     if (data.currentsong === null) {
