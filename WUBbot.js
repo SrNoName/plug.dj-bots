@@ -57,7 +57,7 @@
       curates: 0
     };
 
-    settings.prototype.pupScriptUrl = '';
+    settings.prototype.pupScriptUrl = 'https://raw.github.com/madzomboy/plug.dj-bots/master/WUBbot.js';
 
     settings.prototype.afkTime = 60 * 60 * 1000;
 
@@ -341,7 +341,7 @@
   })();
 
   pupOnline = function() {
-    return API.sendChat("wub bot on!!! version 0.0.0");
+    return API.sendChat("wub bot on!!! version 0.0.3");
   };
 
   populateUserData = function() {
@@ -1628,7 +1628,7 @@
     if (data.currentsong === null) {
       data.newSong();
     } else {
-      API.sendChat("/em: Foi tocado " + data.currentsong.title + " by " + data.currentsong.author + ". Stats: Bacanas: " + data.currentwoots + ", Chatos: " + data.currentmehs + ", Add's: " + data.currentcurates + ".");
+      API.sendChat("");
       data.newSong();
       document.getElementById("button-vote-positive").click();
     }
