@@ -341,7 +341,7 @@
   })();
 
   pupOnline = function() {
-    return API.sendChat("wub bot on!!! version 0.0.3");
+    return API.sendChat("wub bot on!!! version 0.0.4");
   };
 
   populateUserData = function() {
@@ -682,15 +682,14 @@
 
     whyWootCommand.prototype.functionality = function() {
       var msg, nameIndex;
-      msg = " - pong!";
+      msg = "pong!";
       if ((nameIndex = this.msgData.message.indexOf('@')) !== -1) {
-        return API.sendChat(this.msgData.message.substr(nameIndex) + ', ' + msg);
       } else {
         return API.sendChat(msg);
       }
     };
 
-    return whyWootCommand;
+    return whyWootCommnd;
 
   })(Command);
 
@@ -959,7 +958,7 @@
 
     return allAfksCommand;
 
-  })(Command);
+  })(Command); //Outro comando bugado
 
   statusCommand = (function(_super) {
     __extends(statusCommand, _super);
