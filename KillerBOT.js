@@ -57,7 +57,7 @@
       curates: 0
     };
 
-    settings.prototype.pupScriptUrl = 'https://raw.github.com/madzomboy/plug.dj-bots/master/WUBbot.js';
+    settings.prototype.pupScriptUrl = 'https://raw.github.com/madzomboy/plug.dj-bots/master/KillerBOT.js';
 
     settings.prototype.afkTime = 60 * 60 * 1000;
 
