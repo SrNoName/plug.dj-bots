@@ -65,7 +65,7 @@
       {
         interval: 15,
         offset: 0,
-        msg: "WUB WUB WUB WUB I'M THE WUB BOT"
+        msg: "Sou o KillerBOT e irei matar voce XD"
       }
     ];
 
@@ -341,7 +341,7 @@
   })();
 
   pupOnline = function() {
-    return API.sendChat("wub bot on!!! version 0.0.4");
+    return API.sendChat("KillerBOT on!!! version 0.0.0");
   };
 
   populateUserData = function() {
@@ -709,8 +709,7 @@
 
     themeCommand.prototype.functionality = function() {
       var msg;
-      msg = "Qualquer tipo de Musica Bass é permitida aqui. Incluindo Dubstep, Complextro, Drum and Bass, ";
-      msg += "Garage, Breakbeat, Hardstyle, Moombahton, HEAVY EDM, House, Electro, e Trance!!";
+      msg = "Sem temas pre-definidos.";
       return API.sendChat(msg);
     };
 
@@ -734,7 +733,7 @@
 
     rulesCommand.prototype.functionality = function() {
       var msg;
-      msg = "Voce pode ler as regras aqui http://goo.gl/hJ2DWs";
+      msg = "Sem regras pre-definidas.";
       return API.sendChat(msg);
     };
 
@@ -758,7 +757,7 @@
 
     roomHelpCommand.prototype.functionality = function() {
       var msg1, msg2;
-      msg1 = "Bem-vindo a Electro, Dubstep & Techno, para tocar escolha uma musica do Youtube ou SoundCloud.  ";
+      msg1 = "Bem-vindo a " + current-room-value +", para tocar escolha uma musica do Youtube ou SoundCloud.  ";
       msg1 += "Clique em 'Entrar na lista de espera' e toque musicas no estilo EDM, caso nao saiba o que e EDM digite '!tema'.";
       msg2 = "Fique ativo enquanto esta na lista de espera para nao tocar nada que esta no historico (ou olhe o historico da sala)  ";
       msg2 += "Se quiser ler as regras digite '!regras'";
@@ -812,7 +811,7 @@
 
     wootCommand.prototype.functionality = function() {
       var msg, nameIndex;
-      msg = "o bruce é tao legal mas tao legal que fez um script bem legal pra sala http://goo.gl/6t5vkg";
+      msg = "sem scritps";
       if ((nameIndex = this.msgData.message.indexOf('@')) !== -1) {
         return API.sendChat(this.msgData.message.substr(nameIndex) + ', ' + msg);
       } else {
@@ -840,7 +839,7 @@
 
     badQualityCommand.prototype.functionality = function() {
       var msg;
-      msg = "porra que musica ruim onde que tu foi pegar isso ? pqp";
+      msg = "Musica horrivel";
       return API.sendChat(msg);
     };
 
@@ -958,7 +957,7 @@
 
     return allAfksCommand;
 
-  })(Command); //Outro comando bugado
+  })(Command); //Comando bugado
 
   statusCommand = (function(_super) {
     __extends(statusCommand, _super);
@@ -971,7 +970,7 @@
     statusCommand.prototype.init = function() {
       this.command = '!status';
       this.parseType = 'exact';
-      return this.rankPrivelege = 'user';
+      return this.rankPrivelege = 'bouncer';
     };
 
     statusCommand.prototype.functionality = function() {
@@ -1027,7 +1026,7 @@
     }
 
     dieCommand.prototype.init = function() {
-      this.command = '!morra';
+      this.command = '!die';
       this.parseType = 'exact';
       return this.rankPrivelege = 'cohost';
     };
@@ -1086,7 +1085,6 @@
     };
 
     lockCommand.prototype.functionality = function() {
-      API.sendChat('Fechado com as 7 chaves dat ish');
       return data.lockBooth();
     };
 
@@ -1109,7 +1107,6 @@
     };
 
     unlockCommand.prototype.functionality = function() {
-      API.sendChat('voce nunca vai conseguir a chave para abrir meu coracao');
       return data.unlockBooth();
     };
 
@@ -1376,8 +1373,7 @@
 
     whyMehCommand.prototype.functionality = function() {
       var msg;
-      msg = "Caso queira o auto woot simples e rapido instale nosso script http://userscripts.org/scripts/show/174728. ";
-      msg += "La tem um tuto pra voce instalar";
+      msg = "Sem auto woot pre-definido.";
       return API.sendChat(msg);
     };
 
