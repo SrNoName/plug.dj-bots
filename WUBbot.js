@@ -341,7 +341,7 @@
   })();
 
   pupOnline = function() {
-    return API.sendChat("wub bot on!!! version 0.0.5");
+    return API.sendChat("wub bot on!!! version 0.0.6");
   };
 
   populateUserData = function() {
@@ -658,7 +658,7 @@
 
     newSongsCommand.prototype.memberChannels = ["JitterStep", "MistaDubstep", "DubStationPromotions", "UndergroundDubstep", "JesusDied4Dubstep", "DarkstepWarrior", "BombshockDubstep", "Sharestep"];
 
-    newSongsCommand.prototype.channels = ["BassRape", "Mudstep", "WobbleCraftDubz", "MonstercatMedia", "UKFdubstep", "DropThatBassline", "Dubstep", "VitalDubstep", "AirwaveDubstepTV", "EpicNetworkMusic", "NoOffenseDubstep", "InspectorDubplate", "ReptileDubstep", "MrMoMDubstep", "FrixionNetwork", "IcyDubstep", "DubstepWeed", "VhileMusic", "LessThan3Dubstep", "PleaseMindTheDUBstep", "ClownDubstep", "TheULTRADUBSTEP", "DuBM0nkeyz", "DubNationUK", "TehDubstepChannel", "BassDropMedia", "USdubstep", "UNITEDubstep"];
+    newSongsCommand.prototype.channels = ["BassRape", "Mudstep", "WobbleCraftDubz", "MonstercatMedia", "UKFdubstep", "DropThatBassline", "Dubstep", "VitalDubstep", "AirwaveDubstepTV", "EpicNetworkMusic", "NoOffenseDubstep", "InspectorDubplate", "ReptileDubstep", "MrMoMDubstep", "FrixionNetwork", "IcyDubstep", "DubstepWeed", "VhileMusic", "LessThan3Dubstep", "PleaseMindTheDUBstep", "ClownDubstep", "TheULTRADUBSTEP", "DuBM0nkeyz", "DubNationUK", "TehDubstepChannel", "BassDropMedia", "USdubstep", "UNITEDubstep", "UltraRecords];
 
     newSongsCommand.prototype.artists = ["Skrillex", "Doctor P", "Excision", "Flux Pavilion", "Knife Party", "Krewella", "Rusko", "Bassnectar", "Nero", "Deadmau5", "Borgore", "Zomboy"];
 
