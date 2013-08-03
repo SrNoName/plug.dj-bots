@@ -1086,7 +1086,6 @@
     };
 
     lockCommand.prototype.functionality = function() {
-      API.sendChat('Fechado com as 7 chaves dat ish');
       return data.lockBooth();
     };
 
@@ -1109,7 +1108,6 @@
     };
 
     unlockCommand.prototype.functionality = function() {
-      API.sendChat('voce nunca vai conseguir a chave para abrir meu coracao');
       return data.unlockBooth();
     };
 
