@@ -341,7 +341,7 @@
   })();
 
   pupOnline = function() {
-    return API.sendChat("wub bot on!!! version 0.0.4");
+    return API.sendChat("wub bot on!!! version 0.0.5");
   };
 
   populateUserData = function() {
@@ -675,14 +675,14 @@
     }
 
     whyWootCommand.prototype.init = function() {
-      this.command = '!ping';
+      this.command = 'ping';
       this.parseType = 'startsWith';
       return this.rankPrivelege = 'user';
     };
 
     whyWootCommand.prototype.functionality = function() {
       var msg, nameIndex;
-      msg = "pong!";
+      msg = "pong";
       if ((nameIndex = this.msgData.message.indexOf('@')) !== -1) {
       } else {
         return API.sendChat(msg);
@@ -1367,15 +1367,14 @@
     }
 
     whyMehCommand.prototype.init = function() {
-      this.command = '!autowoot';
+      this.command = 'MARCO';
       this.parseType = 'exact';
       return this.rankPrivelege = 'user';
     };
 
     whyMehCommand.prototype.functionality = function() {
       var msg;
-      msg = "Caso queira o auto woot simples e rapido instale nosso script http://userscripts.org/scripts/show/174728. ";
-      msg += "La tem um tuto pra voce instalar";
+      msg = "POLO";
       return API.sendChat(msg);
     };
 
