@@ -689,7 +689,7 @@
       }
     };
 
-    return whyWootCommnd;
+    return whyWootCommand;
 
   })(Command);
 
