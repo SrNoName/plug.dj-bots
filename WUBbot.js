@@ -341,7 +341,7 @@
   })();
 
   pupOnline = function() {
-    return API.sendChat("wub bot on!!! version 0.0.6");
+    return API.sendChat("wub bot on!!! version 0.0.7");
   };
 
   populateUserData = function() {
@@ -1685,12 +1685,11 @@
   };
 
   beggar = function(chat) {
-    var msg, r, responses;
+    var msg;
+    
     msg = chat.message.toLowerCase();
-    responses = ["Pelo amor de deus @{beggar}!  Pare de ser assim", "Pessoal @{beggar} e um grande idiota ಠ_ಠ", "srsly @{beggar}? ಠ_ಠ", "@{beggar}. pls"];
-    r = Math.floor(Math.random() * responses.length);
-    if (msg.indexOf('nigga') !== -1 || msg.indexOf('hitler') !== -1 || msg.indexOf('br br br') !== -1 || msg.indexOf('hue hue hue') !== -1 || msg.indexOf('adf.ly') !== -1) {
-      return API.sendChat(responses[r].replace("{beggar}", chat.from));
+    if (msg.indexOf('nigga') !== -1 || msg.indexOf('hitler') !== -1 || msg.indexOf('br br br') !== -1 || msg.indexOf('hue hue hue') !== -1 || msg.indexOf('adf.ly') !== -1 || msg.indexOf(':trollface:') !== -1) {
+      return API.moderateDeleteChat(chat.chatID);
     }
   };
 
